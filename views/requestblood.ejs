@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request for Blood</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffcccc, #ffe6e6);
+            background-attachment: fixed;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #555;
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            flex-basis: 100%;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex-basis: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group input[type="number"],
+        .form-group select {
+            width: 100%;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        .select-box {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Request for Blood</h1>
+        <h2>Patient Details</h2>
+        <form>
+            <div class="form-group">
+                <label for="patient-name">Patient Name *</label>
+                <input type="text" id="patient-name" name="patient-name" placeholder="Enter patient name" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor-name">Doctor Name *</label>
+                <input type="text" id="doctor-name" name="doctor-name" placeholder="Enter doctor name" required>
+            </div>
+            <div class="form-group">
+                <label for="blood-group">Blood Group *</label>
+                <select id="blood-group" name="blood-group" required>
+                    <option value="" disabled selected>-- Select Blood Group --</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="state">State *</label>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>-- Select State --</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                </select>
+            </div>
+            <h2>Contact Details</h2>
+            <div class="form-group">
+                <label for="contact-name">Contact Name *</label>
+                <input type="text" id="contact-name" name="contact-name" placeholder="Enter contact name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile-number">Mobile No. *</label>
+                <input type="number" id="mobile-number" name="mobile-number" placeholder="Enter mobile number" required>
+            </div>
+            <div class="form-group">
+                <label for="date-needed">Date When Needed *</label>
+                <input type="date" id="date-needed" name="date-needed" required>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority *</label>
+                <select id="priority" name="priority" required>
+                    <option value="" disabled selected>-- Priority Type --</option>
+                    <option value="urgent">Urgent</option>
+                    <option value="normal">Normal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Other Message</label>
+                <textarea id="message" name="message" placeholder="Enter any additional details"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Request</button>
+        </form>
+    </div>
+</body>
+</html>

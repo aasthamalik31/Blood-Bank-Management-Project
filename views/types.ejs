@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Types Needed</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #000; /* Changed to black */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .navbar .buttons a {
+      background-color: white;
+      color: #000; /* Changed text color to black for contrast */
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar .buttons a:hover {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    /* Header Section */
+    header {
+      background: url('https://www.transparenttextures.com/patterns/cubes.png'), #c0392b;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Main Content */
+    .container {
+      text-align: center;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 1200px;
+      width: 90%;
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .container p strong {
+      color: #c0392b;
+    }
+
+    .container .appointment-link {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .container a {
+      color: #c0392b;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Blood Icons Section */
+    .blood-icons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .blood-icon {
+      text-align: center;
+    }
+
+    .blood-icon img {
+      width: 80px;
+      height: auto;
+    }
+
+    .blood-icon span {
+      display: block;
+      margin-top: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    footer {
+      background-color: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #ffeaa7;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">LIFE STREAM</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/types">Types</a></li>
+      <li><a href="/statesform">Donate Us</a></li>
+      <li><a href="/why">Why Donate</a></li>
+      <li><a href="/register">REGISTER</a></li>
+     
+    </ul>
+    <div class="buttons">
+      <a href="register">Register</a>
+      <a href="/">Login</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Types of Blood needed</h1>
+  </header>
+
+  <div class="container">
+    <p>
+      Many variables can impact our blood inventories such as weather, holidays, or tragic events. 
+      Every day, patients who need blood are in crisis, and <strong>you can help</strong> by volunteering to donate! 
+      Less than 10% of the population gives blood, so donors that give on a regular basis are important to meet these needs.
+    </p>
+    <p class="appointment-link">
+      <a href="#">Schedule an appointment today!</a>
+    </p>
+
+    <div class="blood-icons">
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=R5uxuCzkxwas&format=png" alt="O+">
+        <span>O+</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=psI9KwBNZnb9&format=png" alt="O-">
+        <span>O-</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=YZPIXPPECSQ4&format=png" alt="A+">
+        <span>A+</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=WbtaaLrY63MW&format=png" alt="A-">
+        <span>A-</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=jMjpASZsCebC&format=png" alt="B+">
+        <span>B+</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=3qukUDfLd9gu&format=png" alt="B-">
+        <span>B-</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=gXCmsVW1TPCI&format=png" alt="AB+">
+        <span>AB+</span>
+      </div>
+      <div class="blood-icon">
+        <img src="https://img.icons8.com/?size=100&id=w1jX38MpeAR2&format=png" alt="AB-">
+        <span>AB-</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Make an appointment to donate blood today!
+  </footer>
+</body>
+</html>

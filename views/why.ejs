@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Donate Blood?</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header section */
+        .header {
+            background-color: #c0392b;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .header img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        /* Main section */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .content img {
+            width: 300px;
+            border-radius: 100%;
+            margin-bottom: 20px;
+        }
+
+        .donor-btn {
+            background-color: #c0392b;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .donor-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Additional section */
+        .benefits {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .benefits h3 {
+            font-size: 24px;
+            color: #c0392b;
+            margin-bottom: 15px;
+        }
+
+        .benefits ul {
+            padding: 0 20px;
+        }
+
+        .benefits ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function beADonor() {
+            alert('Thank you for choosing to be a donor!');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">LIFE STREAM</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/types">Types</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Causes</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header section -->
+    <header class="header">
+        <img src="/images/blood-donation2.png" alt="Heart Icon">
+        <h1>Why Should You Donate Blood?</h1>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="content">
+            <img src="/images/blood-donation1.jpg" alt="Donate Blood">
+            <h2>Our Nation Requires 4 Crore Units of Blood</h2>
+            <p>
+                Blood is life. Every two seconds, someone in the world needs blood. Unfortunately, while the demand for blood is high, 
+                only a fraction of eligible individuals donate. Blood donation is one of the most selfless acts of kindness that saves 
+                lives and supports families during critical medical situations. Remember, there is no substitute for human blood.
+            </p>
+            <p>
+                By donating blood, you not only save lives but also help maintain sufficient blood reserves for emergencies such as 
+                surgeries, accidents, and chronic illnesses. Every drop counts, and your contribution makes a world of difference.
+            </p>
+            <button class="donor-btn" onclick="beADonor()">Be a Donor</button>
+        </div>
+
+        <!-- Additional content section -->
+        <div class="benefits">
+            <h3>Benefits of Donating Blood</h3>
+            <ul>
+                <li>You save up to three lives with one donation.</li>
+                <li>Regular blood donation improves your heart health by reducing harmful iron levels in your body.</li>
+                <li>It enhances the production of new red blood cells in your body.</li>
+                <li>Blood donors are prioritized for transfusions in emergencies.</li>
+                <li>It’s an opportunity to give back to the community and spread hope.</li>
+            </ul>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
