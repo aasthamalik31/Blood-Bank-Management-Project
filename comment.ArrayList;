@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+
+class Comment{
+    int commentId;
+    int userId;
+    int topicId;
+    String value;
+    Comment(int commentId, int userId, int topicId, String value){
+        this.commentId = commentId;
+        this.userId = userId;
+        this.topicId = topicId;
+        this.value = value;
+    }
+
+}
+class Topic{
+    int topicId;
+    String topicName;
+    ArrayList<Comment> comments = new ArrayList<>();
+    Topic(int topicId, String topicName){
+        this.topicId = topicId;
+        this.topicName = topicName;
+    }
+}
+
+class User{
+    int userId;
+    String username;
+    ArrayList<Comment> comments = new ArrayList<>();
+    User(int userId, String username){
+        this.userId = userId;
+        this.username = username;
+    }
+}
+public class CommentManagementSystem{
+    static int nextUserId = 1;
+    static int nextTopicId = 1;
+    static int nextCommentId = 1;//global variable
+     static ArrayList<User> users = new ArrayList<>();
+     static ArrayList<Topic> topics = new ArrayList<>();
+    public static void main(String[] args) {
+      // static ArrayList<User> users = new ArrayList<>();
+       
+        User user1 = new User(nextUserId++,"sudhanshu");
+        users.add(user1);
+        Topic topic1 = new Topic(nextTopicId++,"Advance Java");
+        topics.add(topic1);
+        Comment comment = new Comment(nextCommentId++,user1.userId,topic1.topicId,"Good Subject ");
+        registerComment(user1,topic1,comment);
+         deleteCommentByUserId(user1.userId);
+    } 
+    public static void registerComment(User user, Topic topic,Comment comment){
+        topic.comments.add(comment);
+        user.comments.add(comment);
+        System.out.println("Comment registered successfully !!");
+    }
+    public static void deleteCommentByUserId(int userId){
+        for (User user : users) {
+        if (user.userId == userId) {
+            for (Comment comment : new ArrayList<>(user.comments)) {
+                for (Topic topic : topics) {
+                    topic.comments.removeIf(c -> c.commentId == comment.commentId);
+                }
+            }
+            user.comments.clear();
+            System.out.println("All comments by user " + userId + " have been deleted.");
+            return;
+        }
+    }
+    System.out.println("User not found.");
+
+    }
+}
